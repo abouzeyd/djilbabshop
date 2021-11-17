@@ -1,7 +1,9 @@
+import LandingPage from './pages/LandingPage';
+
 function App() {
   return (
     <div className="App">
-      <div>helo</div>
+      <LandingPage />
     </div>
   );
 }

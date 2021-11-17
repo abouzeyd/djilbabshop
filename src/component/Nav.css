@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+}
+.logo {
+  flex: 1;
+}
+.navigation {
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .link {
+    text-decoration: none;
+    color: black;
+    margin-top: 22px;
+  }
+}

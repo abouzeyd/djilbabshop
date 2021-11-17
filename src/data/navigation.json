@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Accueil",
+    "link": "/"
+  },
+  {
+    "title": "Djilbab",
+    "link": "/djilbab"
+  },
+  {
+    "title": "Commandes",
+    "link": "/commandes"
+  }
+]
