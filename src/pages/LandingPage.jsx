@@ -4,6 +4,7 @@ import Nav from '../component/Nav';
 import exchange from '../assets/svg/sync-solid.svg';
 import transport from '../assets/svg/shipping-fast-solid.svg';
 import share from '../assets/svg/handshake-regular.svg';
+import landingImage from '../data/landingImages';
 
 const LandingPage = () => {
   return (
@@ -11,22 +12,33 @@ const LandingPage = () => {
       <Nav />
       <Slider />
       <div className="container">
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div className="containerIcone">
           {icones.map((item) => {
             return (
-              <div style={{ display: 'flex', alignItems: 'center' }}>
+              <div className="iconesvg">
                 <img
                   src={item.image}
-                  width="35px"
+                  width="50px"
                   height="80px"
                   alt="exchange"
                 />
-                <div>{item.title}</div>
+                <div className="textIcone">{item.title}</div>
               </div>
             );
           })}
         </div>
-        {/* <div>wellcome in my landingPage</div> */}
+        <div className="titleCollection">NOUVELLE COLLECTION DE DJILBAB</div>
+        <div className="gridImage">
+          {landingImage.map((item) => {
+            return (
+              <div className="carte">
+                <img src={item.image} className="width" alt="djilbab" />
+                <div className="titleDjilbab">{item.title}</div>
+                <p className="priceDjilbab">{item.price}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
