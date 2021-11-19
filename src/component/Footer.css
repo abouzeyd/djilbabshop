@@ -1,0 +1,23 @@
+.footer {
+  background-color: pink;
+  padding: 35px;
+}
+.contact__footer {
+  text-decoration: none;
+  color: #666;
+}
+.blockFooter {
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+.paragraphe {
+  width: 250px;
+}
+@media screen and (max-width: 800px) {
+  .blockFooter {
+    color: #666;
+    display: flex;
+    flex-direction: column;
+  }
+}

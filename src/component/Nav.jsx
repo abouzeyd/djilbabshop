@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">La soeur Salafi</Navbar.Brand>
+        <Navbar.Brand href="/">LA SOEUR SALAFI</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <navigate className="navigation">

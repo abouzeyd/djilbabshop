@@ -1,27 +1,23 @@
 import React from 'react';
 import Slider from '../component/Slider';
 import Nav from '../component/Nav';
-import exchange from '../assets/svg/sync-solid.svg';
+import exchange from '../assets/svg/share-square-regular.svg';
 import transport from '../assets/svg/shipping-fast-solid.svg';
 import share from '../assets/svg/handshake-regular.svg';
 import landingImage from '../data/landingImages';
+import Footer from '../component/Footer';
 
 const LandingPage = () => {
   return (
     <div>
       <Nav />
-      <Slider />
       <div className="container">
+        <Slider />
         <div className="containerIcone">
           {icones.map((item) => {
             return (
               <div className="iconesvg">
-                <img
-                  src={item.image}
-                  width="50px"
-                  height="80px"
-                  alt="exchange"
-                />
+                <img src={item.image} className="icones" alt="exchange" />
                 <div className="textIcone">{item.title}</div>
               </div>
             );
@@ -32,14 +28,18 @@ const LandingPage = () => {
           {landingImage.map((item) => {
             return (
               <div className="carte">
-                <img src={item.image} className="width" alt="djilbab" />
-                <div className="titleDjilbab">{item.title}</div>
-                <p className="priceDjilbab">{item.price}</p>
+                <a href={item.link} className="linkCarte">
+                  <span className="reduction">{item.reduction}</span>
+                  <img src={item.image} className="width" alt="djilbab" />
+                  <div className="titleDjilbab">{item.title}</div>
+                  <p className="priceDjilbab">{item.price}</p>
+                </a>
               </div>
             );
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
